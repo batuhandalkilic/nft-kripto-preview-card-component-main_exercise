@@ -1,3 +1,5 @@
+// aynı clasları kullanamaya çalış ki ex: container wrap card: sürekli yazma!! 11.04.2022
+
 @mixin media-mobile{
 
     @media screen and (max-width:500px) {
@@ -36,8 +38,6 @@
         
     }
 
-
-    
 
 }
 
@@ -246,4 +246,18 @@
 
 
     
+}
+
+
+@mixin media-mobile-just-card{
+
+    @media screen and (max-width:500px) {
+
+
+        .card{
+            width: 85%;
+        }
+        
+    }
+
 }

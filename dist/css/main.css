@@ -43,7 +43,7 @@ body {
   border-radius: 1rem;
   padding: 1.2em;
 }
-.wrap .card > * {
+.wrap .card > :nth-child(n+2) {
   margin-top: 20px;
 }
 .wrap .card-image {
@@ -54,7 +54,6 @@ body {
 }
 .wrap .card-image:hover {
   cursor: pointer;
-  transition: all 3s ease-in;
 }
 .wrap .card-image:hover::after {
   content: "";
@@ -65,7 +64,6 @@ body {
   height: 100%;
   background: hsla(178deg, 100%, 50%, 0.5);
   border-radius: 1rem;
-  transition: all 2s;
 }
 .wrap .card-image:hover::before {
   content: "";
@@ -135,6 +133,11 @@ body {
   width: max-content;
   color: hsl(178deg, 100%, 50%);
   cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+  .wrap .card {
+    width: 85%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
